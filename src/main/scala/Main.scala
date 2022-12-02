@@ -16,6 +16,7 @@ object Main {
       }
     }
 
-    println(elves.reduceLeft(_ max _))
+    println("Max", elves.max)
+    println(elves.sorted(Ordering.Int.reverse).take(3).sum)
   }
 }
